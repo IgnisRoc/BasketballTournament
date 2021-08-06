@@ -1,0 +1,34 @@
+﻿<Window x:Class="BasketballTournament.Tournaments"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasketballTournament"
+        mc:Ignorable="d"
+        Title="Соревнования" Height="200" Width="800" ResizeMode="CanMinimize" Background="#FFFD8E8E">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition />
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Турниры" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        <TextBlock Text="Турнир:" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        <ComboBox Name="TournamentCombo" Grid.Row="2" Grid.Column="5" VerticalContentAlignment="Center" DisplayMemberPath="Name"></ComboBox>
+        <Button Name="BackButton" Content="Вернуться назад" Grid.Row="4" Grid.Column="1" FontSize="16" Cursor="Hand" Click="BackButton_Click"/>
+        <Button Name="OpenButton" Content="Открыть турнир" Grid.Row="4" Grid.Column="3" FontSize="16" Cursor="Hand" Click="OpenButton_Click"/>
+        <Button Name="CreateButton" Content="Создать турнир" Grid.Row="4" Grid.Column="5" FontSize="16" Cursor="Hand" Click="CreateButton_Click"/>
+    </Grid>
+</Window>

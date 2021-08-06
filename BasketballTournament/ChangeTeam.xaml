@@ -1,0 +1,33 @@
+﻿<Window x:Class="BasketballTournament.ChangeTeam"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasketballTournament"
+        mc:Ignorable="d"
+        Title="Редактировать команду" Height="200" Width="800" BorderThickness="0" ResizeMode="CanMinimize" Background="#FFFD8E8E">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition />
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Button Name="BackButton" Content="Вернуться назад" Grid.Row="4" Grid.Column="1" FontSize="16" Cursor="Hand" Click="BackButton_Click"/>
+        <Button Name="SaveButton" Content="Сохранить" Grid.Row="4" Grid.Column="5" FontSize="16" Cursor="Hand" Click="SaveButton_Click"/>
+        <TextBlock Text="Команда" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        <TextBlock Text="Название:" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24"/>
+        <TextBox Name="TeamName" Grid.Row="2" Grid.Column="5" FontSize="24" VerticalContentAlignment="Center" />
+    </Grid>
+</Window>

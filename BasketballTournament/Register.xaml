@@ -1,0 +1,47 @@
+﻿<Window x:Class="BasketballTournament.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasketballTournament"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="300" Width="800" BorderThickness="0" ResizeMode="CanMinimize" Background="#FFFD8E8E">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition />
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition />
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition />
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Button Name="RegisterButton" Content="Зарегистрироваться" Grid.Row="9" Grid.Column="3" FontSize="16" Cursor="Hand" Click="RegisterButton_Click"/>
+        <Button Name="LoginButton" Content="Вернуться ко входу" Grid.Row="11" Grid.Column="3" FontSize="16" Cursor="Hand" Click="LoginButton_Click"/>
+        <TextBlock Text="Регистрация" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        <TextBlock Text="Имя:" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24"/>
+        <TextBlock Text="Фамилия:" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24"/>
+        <TextBlock Text="Логин:" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24"/>
+        <TextBlock Text="Пароль:" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" />
+        <TextBox Name="RegName" Grid.Row="2" Grid.Column="5" FontSize="24" VerticalContentAlignment="Center"/>
+        <TextBox Name="RegLastName" Grid.Row="4" Grid.Column="5" FontSize="24" VerticalContentAlignment="Center"/>
+        <TextBox Name="LoginText" Grid.Row="6" Grid.Column="5" FontSize="24" VerticalContentAlignment="Center"/>
+        <PasswordBox Name="Password" Grid.Row="8" Grid.Column="5" FontSize="24" VerticalContentAlignment="Center"/>
+    </Grid>
+    
+</Window>
